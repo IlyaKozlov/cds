@@ -14,7 +14,7 @@ class StyleTest(unittest.TestCase):
 
     def flake_test(self) -> None:
         """Test that we conform to flake."""
-        style_guide = flake8.get_style_guide(ignore=["E501", "W504", "ANN101", "TYP101"], max_line_length=140)
+        style_guide = flake8.get_style_guide(ignore=["E501", "W504", "ANN101", "TYP101", "TYP102"], max_line_length=140)
 
         files = self.get_files()
         for file in files:
